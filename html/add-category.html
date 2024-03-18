@@ -61,7 +61,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-link">
+                    <a href="../index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
                 <svg
                   width="25"
@@ -246,6 +246,9 @@
                             <li class="menu-item">
                                 <a href="products.html" class="menu-link">
                                     <div data-i18n="Notifications">Product management</div>
+                                </a>
+                                <a href="Category.html" class="menu-link">
+                                    <div data-i18n="Notifications">Category management</div>
                                 </a>
                             </li>
                             <!-- <li class="menu-item">
@@ -607,28 +610,54 @@
                                     </div>
                                     <div class="row tm-edit-product-row">
                                         <div class="col-xl-6 col-lg-6 col-md-12">
-                                            <form action="" class="tm-edit-product-form">
+                                            <form action="" method="post" class="tm-edit-product-form">
                                                 <div class="form-group mb-3">
                                                     <label for="name">Category Name
                                     </label>
-                                                    <input id="name" name="name" type="text" class="form-control validate" required />
+                                                    <input id="name" name="name" type="text" value="" class="form-control validate" />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="name">Short description
+                                    </label>
+                                                    <input id="name" name="name" type="text" value="" class="form-control validate" />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="description">Description</label
+                                    >
+                                    <textarea                    
+                                      class="form-control validate tm-small"
+                                      rows="5"
+                                      required
+                                    ></textarea>
+                                  </div>
+                                  
+                                  <div class="row">
+                                      <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                          <label
+                                            for="expire_date"
+                                            >Expire Date
+                                          </label>
+                                                    <input id="expire_date" name="expire_date" type="text" value="22 Oct, 2020" class="form-control validate" data-large-mode="true" />
                                                 </div>
 
                                         </div>
-                                        <div class="col-12">
-                                            <a href="products.html" type="submit" class="btn btn-primary btn-block text-uppercase">Add Category Now</a>
-                                        </div>
-                                        </form>
+
                                     </div>
+
+                                    <div class="col-12">
+                                        <a href="products.html" type="submit" class="btn btn-primary btn-block text-uppercase">Update Now</a>
+                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- main -->
-                    <!-- / Content -->
+                </div>
+                <!-- main -->
+                <!-- / Content -->
 
-                    <!-- Footer -->
-                    <!-- <footer class="content-footer footer bg-footer-theme">
+                <!-- Footer -->
+                <!-- <footer class="content-footer footer bg-footer-theme">
                                         <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                                             <div class="mb-2 mb-md-0">
                                                 ©
@@ -654,17 +683,17 @@
                 </div>
               </div>
             </footer> -->
-                    <!-- / Footer -->
+                <!-- / Footer -->
 
-                    <div class="content-backdrop fade"></div>
-                </div>
-                <!-- Content wrapper -->
+                <div class="content-backdrop fade"></div>
             </div>
-            <!-- / Layout page -->
+            <!-- Content wrapper -->
         </div>
+        <!-- / Layout page -->
+    </div>
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 

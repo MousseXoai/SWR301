@@ -46,15 +46,7 @@
                         <div class="col-6 col-md-4 order-3 order-md-3 text-right">
                             <div class="site-top-icons">
                                 <ul>
-
-                                    <li><a href="index.html">Logout</a></li>
-                                    <li><a href="customer_info.html"><span class="icon icon-person"></span></a></li>
-                                    <li>
-                                        <a href="cart.html" class="site-cart">
-                                            <span class="icon icon-shopping_cart"></span>
-                                            <span class="count">2</span>
-                                        </a>
-                                    </li>
+                                    <li><a href="html/auth-login-basic.html">Login</a></li>
                                     <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
                                 </ul>
                             </div>
@@ -67,14 +59,13 @@
                 <div class="container">
                     <ul class="site-menu js-clone-nav d-none d-md-block">
                         <li>
-                            <a href="homepage(customer).html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about_guest.html">About</a>
                         </li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="order-history.html">Order history</a></li>
+                        <li><a href="shop_guest.html">Shop</a></li>
+                        <li><a href="contact_guest.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -91,11 +82,63 @@
         <div class="site-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <span class="icon-check_circle display-3 text-success"></span>
-                        <h2 class="display-3 text-black">Thank you!</h2>
-                        <p class="lead mb-5">You order was successfuly completed.</p>
-                        <p><a href="shop.html" class="btn btn-sm btn-primary">Back to shop</a></p>
+                    <div class="col-md-12">
+                        <h2 class="h3 mb-3 text-black">Get In Touch</h2>
+                    </div>
+                    <div class="col-md-7">
+
+
+                        <div class="p-3 p-lg-5 border">
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_fname" name="c_fname">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_lname" name="c_lname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_subject" class="text-black">Subject </label>
+                                    <input type="text" class="form-control" id="c_subject" name="c_subject">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_message" class="text-black">Message </label>
+                                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <a href="index.html"><input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 ml-auto">
+                        <div class="p-4 border mb-3">
+                            <span class="d-block text-primary h6 text-uppercase">New York</span>
+                            <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+                        <div class="p-4 border mb-3">
+                            <span class="d-block text-primary h6 text-uppercase">London</span>
+                            <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+                        <div class="p-4 border mb-3">
+                            <span class="d-block text-primary h6 text-uppercase">Canada</span>
+                            <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -112,9 +155,9 @@
                             <div class="col-md-6 col-lg-4">
                                 <ul class="list-unstyled">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="about_guest.html">About</a></li>
+                                    <li><a href="shop_guest.html">Shop</a></li>
+                                    <li><a href="contact_guest.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -138,13 +181,11 @@
                         </div>
 
                         <div class="block-7">
-
                             <label for="email_subscribe" class="footer-heading">Subscribe</label>
                             <div class="form-group">
                                 <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
                                 <a href="index.html"><input type="submit" class="btn btn-sm btn-primary" value="Send"></a>
                             </div>
-
                         </div>
                     </div>
                 </div>
