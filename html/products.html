@@ -42,6 +42,27 @@
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <style>
+        .filter-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select,
+        input[type="date"],
+        input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+    </style>
 
     <!-- Page CSS -->
 
@@ -606,6 +627,24 @@
                                         <div class="tm-product-table-container">
                                             <h2 class="tm-block-title">Product management</h2>
                                             <a href="add-product.html" style="float: right;" class="btn btn-primary btn-block text-uppercase mb-3">Add new product</a>
+                                            <div style="display: flex; gap:10px;" class="filter-container">
+                                                <label for="filter-category">Category:</label>
+                                                <select id="filter-category">
+                                                    <option value="all">All</option>
+                                                    <option value="category1">Category 1</option>
+                                                    <option value="category2">Category 2</option>
+                                                    <option value="category3">Category 3</option>
+                                                </select>
+                                                
+                                                <label for="filter-date">Date Added:</label>
+                                                <input type="date" id="filter-date">
+                                                
+                                                <label for="filter-price">Price:</label>
+                                                <input type="number" id="filter-price" placeholder="Max Price">
+                                                
+                                                <label for="filter-quantity">Quantity:</label>
+                                                <input type="number" id="filter-quantity" placeholder="Min Quantity">
+                                            </div>
                                             <table class="table table-hover tm-table-small tm-product-table">
                                                 <thead>
                                                     <tr>
